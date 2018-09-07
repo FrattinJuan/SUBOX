@@ -1,0 +1,461 @@
+@charset"utf-8";
+/*Esta clase se utiliza en el login, de forma al formulario de ingreso*/
+ .logueo {
+    height:100%;
+    width:40%;
+    margin:10% 30%;
+    background-color:#f8f8f8;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+}
+@media (max-width: 992px){
+    .logueo{
+        margin-top: 23%;
+        margin-left: 20%;
+        width: 65%;
+    }
+    .checkbox input[type=checkbox]{
+        margin-left:0;
+    }
+}
+.logo {
+    color:white;
+}
+#alerta{
+    margin: 2% 10% 0 10%;
+}
+/*Pertenece a login, esta le da forma a la imagen de perfil del ingreso*/
+ .profile-img {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+}
+/*Login, posiciona cada elemento dentro del formulario */
+ .log {
+    width:80%;
+    margin-top:0;
+    margin-left:10%;
+    margin-right:10%;
+}
+.log button{
+    margin-top: 2%;
+}
+/*Esta clase se utiliza para redefinir una de boostrap*/
+.form-horizontal .checkbox{
+    padding-top: 0;
+    margin-top: 1%
+}
+.chb {
+    text-align:center;
+    margin-right:1%;
+}
+/*Por ahora no se encuentra el archivo donde esta clase actua, posibemnte se la borre */
+ .boton {
+    margin-left:20%;
+}
+/*Esta clase por ahora se encuentra en desuso*/
+ .pan {
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+/* La clase botona se encuentra en varios archivos, es la seleccionada para darle estilo al boton principal de un formulario*/
+ .botona {
+    margin-left:37.5%;
+    width:30%;
+}
+/*Esta clase se encarga de centrar el formulario de varias paginas*/
+ .formu {
+    margin-left:20%;
+    padding-left: 0;
+    padding-right: 0;
+}
+/*La clase titulo se usa para definir el margen del titulo de la pagina con respecto a la navbar*/
+ .titulo {
+    margin-top: 6%;
+}
+@media (max-width: 992px){
+    .formu{
+        margin-left: 0;
+    }
+    .titulo{
+        margin-top: 17%;
+    }
+}
+/*Esta clase edita la predefinida clase de bootstrap, cambiando la fuente*/
+ .brand {
+    font-family:"Kaushan Script", "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+/*La siguiente clase define una nueva fuente para la navbar, se reemplazan los de boostrap*/
+ .navheadings {
+    font-family:Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+/*A continuacion se definen las fuentes que se ran utilizadas en el programa como regla general */
+ @font-face {
+    font-family:'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat-Regular'), url('../fonts/Montserrat-Regular.woff') format('woff');
+}
+@font-face {
+    font-family:'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat-Bold'), url('../fonts/Montserrat-Bold.woff') format('woff');
+}
+@font-face {
+    font-family:'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Kaushan Script'), local('KaushanScript-Regular'), url(../fonts/Kaushan-Script.woff) format('woff');
+}
+@font-face {
+    font-family:'Roboto Slab';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Roboto Slab Thin'), local('RobotoSlab-Thin'), url(../fonts/RobotoSlab-Thin.woff) format('woff');
+}
+@font-face {
+    font-family:'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url(../fonts/RobotoSlab-Light.woff) format('woff');
+}
+@font-face {
+    font-family:'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(../fonts/RobotoSlab-Regular.woff) format('woff');
+}
+@font-face {
+    font-family:'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(../fonts/RobotoSlab-Bold.woff) format('woff');
+}
+/*Formateo de el codigo de los links*/
+ a {
+    text-decoration:none;
+    color:#000
+}
+a:focus, a:hover {
+    text-decoration:none;
+    color:#666;
+}
+/*Se le asigna el fondo a todas las paginas */
+ body {
+    background-image:url(../images/fondo.png);
+    font-family:"Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0 2% 0 2%;
+}
+/*Por ahora esta clase no esta siendo utlizada*/
+ .arch {
+    margin-left:37.5%;
+    margin-bottom:2%;
+}
+.panel-group .panel + .panel {
+    margin-top: 0px;
+}
+.list-group-item.disabled {
+    margin-top: 5px;
+}
+/* clases utilizadas en Gestion de Estados*/
+ .estadoactivo {
+    float: left;
+    width: 45%;
+    margin-left:3%;
+}
+.estadoinactivo {
+    float: left;
+    width: 45%;
+    margin-left: 2%;
+}
+/*Esta clase le da estilo a la informacion del alumno en gestionalumnos */
+.profile span{
+    font-size: 61%;
+    margin-right: 2%;
+    background-color: transparent;
+    color: grey;
+    font-weight: 400;
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+}
+.profile span.btn-success{
+    border: 1px solid #5cb85c;
+}
+.profile span.btn-info{
+    border: 1px solid #46b8da;
+}
+.profile button{
+    float: right;
+}
+.profile .btn-success:hover{
+    color: grey;
+    background-color: transparent; 
+    border-color: #398439;
+}
+.profile .btn-info:hover{
+    color: grey;
+    background-color: transparent; 
+    border-color: #5bc0de;
+}
+@media (max-width: 992px){
+    .profile{
+        margin-top: 3%;
+    }
+    .profile span{
+        margin-top: 1%;
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        margin-bottom: -1px;
+    }
+    .profile button{
+        width: 100%;
+    }
+}
+/*Esta clase nos permite resaltar el modulo activo del alumno en su registro (color a definir)*/
+ .current {
+    background-color: rgb(204, 255, 204);
+}
+.nav-tabs > li.current.active > a, .nav-tabs > li.current.active > a:hover, .nav-tabs > li.current.active > a:focus {
+    background-color: rgb(204, 255, 204);
+}
+/* Gestion de Estados*/
+ .estadoactivo, .estadoinactivo {
+    float: left;
+    width: 45%;
+    margin:1%;
+}
+.estadoactivo {
+    margin-left: 2%;
+}
+.estadoactivo .list-group, .estadoinactivo .list-group {
+    height: 350px;
+    overflow: auto;
+}
+.check {
+    float: right;
+    margin: auto;
+}
+.btn-footer-info-estados {
+    width: 100%;
+}
+.box-icon{
+	overflow: auto;
+	height: 100%;
+}
+/*Clases usadas en modulo para los estados*/
+.box-icon li{
+	background-color: silver;
+	display: block;
+	margin-left: 1%;
+	margin-top: 1%;
+	border: 1px solid rgb(163, 157, 157);
+	border-radius: 3px;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 8.33333333%;
+	float: left;
+}
+@media (max-width: 992px){
+    .box-icon li{
+        padding-right: 0;
+        padding-left: 6px;
+    }
+}
+.btn-modal{
+	margin-left: 2%;
+}
+/* Clase que se utiliza en las tablas de gestionalumnos*/
+#body{
+    padding-bottom: 0;
+}
+/*Buscar Alumnos*/
+#sugerencias{
+	position:absolute; 
+	background-color:white;
+	width:100%;
+	border: 1px solid #ccc;
+    border-radius: 4px; 
+}
+#sugerencias tr{
+	height:24px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	border-top:none;
+	border-bottom: 1px solid #ddd;
+}
+.margin-bottom-none{
+	margin-bottom: 0;
+}
+#mas-resultados tr{
+	border: 1px solid #ddd;
+}
+/*Id de mismodulos para el boton busqueda de logs*/
+#searchlogs{
+    margin-bottom: 2%;
+}
+/* addeditmodulo */
+.hintprof{
+    text-align: center;  
+    font-family: "Roboto Slab", sans-serif;
+}
+    /*creada para que los span con el titulo tenga borde en el costado*/
+.input-group-addon:first-child{
+    border: 1px solid #ccc;
+}
+/*Pagina perfil*/
+#username{
+    padding: 12px;
+    margin-left: -15px;
+    border-top-left-radius: 3px;
+    border-right: 1px solid #ddd;
+    background-color: #dcdcdc;
+}
+#dni{
+    padding: 12px 12px 12px 39.5px;
+    margin-left: -15px;
+    border-bottom-left-radius: 3px;
+    border-right: 1px solid #ddd;
+    background-color: #dcdcdc;
+}
+/* fondo gris a actividades en mismodulos.php*/
+#actividades{
+    background-color: #DBDBDB;
+}
+/*Quita el padding en los panels de adminactividad*/
+.col-adaptation{
+    padding-right: 0;
+    padding-left: 0;
+}
+/*Clase para centrar bloques*/
+.centrado{
+    display: block;
+    margin: 0 auto;
+}
+/* clase utilizada en el modal de adminactividades*/
+.input-group{
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+/*Clase para evitar que los colores se cambien en la cantidad de alumnos de mis módulos*/
+.cantalumnos{
+    background-color: white !important;
+    cursor: default !important;
+    border-color: #ccc !important;
+}
+/*Deja estatico el nombre modulo*/
+.borde-addedit{
+    border: 1px solid #ccc !important;
+    border-radius: 0 !important;
+}
+/*Correccion de tamaño de modulos*/
+#confirm{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+/*Color del titulo de modulos*/
+.alert h1 a {
+    color: #557AB4;
+}
+/*Clase usada para acomodar modulo*/
+.unrow{
+    margin-left: 0;
+    margin-right: 0;
+}
+.glyphicon-log-in:hover{
+    cursor: pointer;
+}
+/*header modal tipo success*/
+.modal-header-success{
+    background-color: #dff0d8;
+    color: #3c763d;
+    border-radius: 5px 5px 0 0;
+}
+/*header modal tipo danger*/
+.modal-header-danger{
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    border-radius: 5px 5px 0 0;
+}
+/*esta clase es utilizada por los panels collpase de la ayuda en los archivos*/
+.pointer{
+    cursor:pointer;
+}
+.well-mod{
+    margin-bottom:0;
+}
+/*Este estilo se usa para corregir problemas en la barra de busqueda del navbar */
+#search{
+    float:left;
+    margin-left: 16%;
+}
+@media (max-width: 992px){
+    #search{
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+        float: none;
+    }
+}
+.scroll-help {
+    position: relative;
+    height: 244px;
+    margin-top: 10px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+#modalestadoscontent {
+    /* 80% of window height */
+    height: 95%;
+    overflow: auto;
+}
+/*Nuevo panels de secciones de la ayuda por paginas*/
+.well-mod .panel-heading{
+    color: rgb(245, 245, 245);
+    background-color: rgba(30, 144, 255, 0.58);
+    border-color: rgba(245, 245, 245, 245);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+/*pagina de ayuda*/
+.scroll-help>div>div>p>a.jump, .scroll-help>div>div>ul>li>a.jump{
+    color: #3F51B5;
+}
+/*pagina de aboutus*/
+.team-member {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-member img {
+    margin: 0 auto;
+    border: 7px solid #fff;
+}
+
+.team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+.team-member p {
+    margin-top: 0;
+}
+#logodreamteam{
+    font-family: 'Audiowide', cursive;
+    font-size: 4em;
+}
+/* Fuente de Dream Team */
+@font-face {
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Audiowide'), local('Audiowide-Regular'), url(../fonts/Audiowide.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
