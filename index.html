@@ -1,240 +1,260 @@
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link rel="icon" type="image/png" href="./dist/img/Logo 300x300.png">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>SUBOX</title>
-		<!-- Bootstrap -->
-		<link rel="stylesheet" href="dist/css/bootstrap.min.css">
 
-		<script type="text/javascript" src="dist/js/popper.min.js"></script>
-		<script type="text/javascript" src="dist/js/jquery.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="dist/css/root.css">
-		<!-- Fuente de iconos FontAwesome-->
-		<link rel="stylesheet" type="text/css" href="dist/css/css/all.css">
-		
-		
-	</head>
-	<body data-spy="scroll" data-target="#navbar">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="image/png" href="./dist/img/Logo 300x300.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SUBOX</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="dist/css/bootstrap.min.css">
 
-		<!-- Load Facebook SDK for JavaScript -->
+        <script type="text/javascript" src="dist/js/popper.min.js"></script>
+        <script type="text/javascript" src="dist/js/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="dist/css/root.css">
+        <!-- Fuente de iconos FontAwesome-->
+        <link rel="stylesheet" type="text/css" href="dist/css/css/all.css">
+
+
+    </head>
+
+    <body data-spy="scroll" data-target="#navbar">
+
+        <!-- Load Facebook SDK for JavaScript -->
         <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
-       fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
 
-       <!-- Your customer chat code -->
-       <div class="fb-customerchat"
-       attribution=install_email
-       page_id="303748306824480"
-       theme_color="#0084ff"
-       logged_in_greeting="Hola! Cómo podemos ayudarte?"
-       logged_out_greeting="Hola! Cómo podemos ayudarte?">
-       </div>
+        <!-- Your customer chat code -->
+        <div class="fb-customerchat" attribution=install_email page_id="303748306824480" theme_color="#0084ff" logged_in_greeting="Hola! Cómo podemos ayudarte?" logged_out_greeting="Hola! Cómo podemos ayudarte?">
+        </div>
 
-		<nav class="navbar fixed-top navbar-expand-lg navbar-transparent navbar-light" id="navbar">
-		  <a class="navbar-brand ml-3" href="index.html"><img src="./dist/img/Logo 300x300.png" width="30" height="30" class="d-inline-block align-top"> SUBOX</a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-transparent navbar-light" id="navbar">
+            <a class="navbar-brand ml-3" href="index.html">
+                <img src="./dist/img/Logo 300x300.png" width="30" height="30" class="d-inline-block align-top">SUBOX</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+            </button>
 
-		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-		    <ul class="navbar-nav ml-md-auto d-md-flex">
-		      <li class="nav-item ml-1">
-		        <a class="nav-link d-flex justify-content-start" href="#item-2" data-toggle="tooltip" data-placement="bottom" title="Mision"><i class="material-icons">map</i><p class="ml-3 evince">Mision</p></a>
-		      </li>
-		      <li class="nav-item ml-1">
-		        <a class="nav-link d-flex justify-content-start" href="#item-3" data-toggle="tooltip" data-placement="bottom" title="Productos"><i class="material-icons">shopping_basket</i><p class="ml-3 evince">Productos</p></a>
-		      </li>
-		      <li class="nav-item ml-1">
-		        <a class="nav-link d-flex justify-content-start" href="#item-4" data-toggle="tooltip" data-placement="bottom" title="¿Quienes Somos?"><i class="material-icons">info</i><p class="ml-3 evince">¿Quienes Somos?</p></a>
-		      </li>
-		      <li class="nav-item ml-1">
-		        <a class="nav-link d-flex justify-content-start" href="#item-5" data-toggle="tooltip" data-placement="bottom" title="Equipo"><i class="material-icons">group</i><p class="ml-3 evince">Equipo</p></a>
-		      </li>
-		      <li class="nav-item ml-1">
-		        <a class="nav-link d-flex justify-content-start" href="#item-7" data-toggle="tooltip" data-placement="bottom" title="Prensa"><i class="material-icons">book</i><p class="ml-3 evince">Prensa</p></a>
-		      </li>
-		      <li class="nav-item ml-1">
-		        <a class="nav-link d-flex justify-content-start" href="#item-6" data-toggle="tooltip" data-placement="bottom" title="Contacto"><i class="material-icons">drafts</i><p class="ml-3 evince">Contacto</p></a>
-		      </li>
-		      <li class="nav-item dropdown ml-1">
-		      	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="material-icons">person_add</i></a>
-		      	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			    	<a class="dropdown-item btn-outline-dark text-center" href="http://fb.me/suboxar"><i class="fab fa-facebook-f"></i></a>
-			    	<div class="dropdown-divider"></div>
-			    	<a class="dropdown-item btn-outline-dark text-center" href="http://instagram.com/suboxar"><i class="fab fa-instagram"></i></a>
-			    	<div class="dropdown-divider"></div>
-			    	<a class="dropdown-item btn-outline-dark text-center" href="http://linkedin.com/company/suboxar"><i class="fab fa-linkedin-in"></i></a>
-			    </div>
-		      </li>		      
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Registrarse</a>
-		      </li>
-		    </ul>
-			  </div>
-			</nav>
-		
-		<header class="" id="item-1">
-			<div class="page-header">
-				<div class="page-header-img" style="background-image: url('./dist/img/6M64UP.jpg');"></div>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-12">
-							<h1 class="display-4 mt-5 mx-auto head">SUBOX Argentina</h1>
-							<h3 class="display-4 text-center sub mx-auto">Espacios que se adaptan a tu presente y te permiten vivir tu futuro. Donde sea.<br> 
-                            Arma el tuyo y visualizalo online!</h3>	
-						</div>
-					</div>					
-				</div>				
-			</div>
-		</header>
-		<section class="" id="item-2" data-spy="scroll" data-target="#navbar" data-offset="0">
-			<div class="jumbotron jumbotron-fluid">
-				<div class="container-fluid">
-					<h1 class="text-center display-4 mt-5">Mirando al Futuro</h1>
-					<h4 class="mx-auto text-center display-4 descrip text-muted mt-3">SUBOX es una startup Argentina que fabrica espacios habitables transportables a través de innovadores métodos de diseño y aislación, de muy alta calidad, durabilidad y flexibilidad de usos y posibilidades de expansión, entregándotelos en sólo un par de meses.</h4>
-				</div>
-			</div>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-6 mt-1">
-						<div class="card imagen">
-							<img class="card-img" src="./dist/img/Vivienda%20-%2036%20m2%202.jpg">
-						</div>
-					</div>
-					<div class="col-md-6 mt-1">
-						<div class="card imagen">
-							<img class="card-img" src="./dist/img/Vivienda%20-%2036%20m2.jpg">
-						</div>
-					</div>
-					<div class="col-md-12">
-						<blockquote class="blockquote text-center mt-3">
-							<p class="lead">"Diseñar es hacer lo máximo con lo mínimo." </p>
-							<footer class="blockquote-footer">BUCKMINSTER FULLER</footer>
-						</blockquote>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="mt-4 section2" id="item-3">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<h1 class="text-center mb-4 display-4" >Nuestros Productos</h1>
-					</div>
-					<div class="col-md-4 mt-3 col-sm-4">
-						<div class="card">
-							<div class="card-over">
-								<img src="dist/img/Vivienda%20-%2036%20m2%20int%202.jpg" class="card-img-top img-card">
-								<div class="overlay">SUBOX LifePack</div>
-							</div>							
-							<div class="card-body">
-								<p>Espacios móviles para la vida diaria</p>
-								<a href="" class="btn text-right">Más Información</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 mt-3 col-sm-4">
-						<div class="card">
-							<div class="card-over">
-								<img src="dist/img/Oficina%20-%2054%20m2%202.jpg" class="card-img-top img-card">
-								<div class="overlay">SUBOX WorkPack</div>
-							</div>							
-							<div class="card-body">
-								<p>Espacios móviles de trabajo y venta</p>
-								<a href="" class="btn text-right">Mas Informacion</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 mt-3 col-sm-4">
-						<div class="card">
-							<div class="card-over">
-								<img src="dist/img/Ocio%20-%20sala%20cine%2018m2%203.jpg" class="card-img-top img-card">
-								<div class="overlay">SUBOX FunPack</div>
-							</div>							
-							<div class="card-body">
-								<p>Espacios móviles de ocio y relajación</p>
-								<a href="" class="btn text-right">Mas Informacion</a>
-							</div>
-						</div>
-					</div> 
-				</div>
-			</div>
-		</section>
-		<section class="section" id="item-4">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<h3 class="display-4 text-center mt-4">¿Quienes somos?</h3>
-						<p class="text-center text-muted">Nuestro equipo está compuesto de gente joven, <br> decidida y capaz, dedicada a buscar la satisfacción en cada cliente.<br> Buscamos innovación responsable en todo aspecto posible.</p>
-					</div>
-					<div class="col-md-12 mt-4 card-deck">
-						<div class="card border-light">
-							<div class="card-header bg-transparent text-center title"><i class="material-icons md-48">trending_up</i><h5>Mision</h5></div>
-							<h6 class="card-title mt-2 text-center text-muted">Nuestro Proposito</h6>
-							<p>Brindar un espacio acorde a la vida dinámica de los tiempos actuales, que de adapte a la vida del usuario y le permita vivir su futuro, sea cual sea, y no al revés.</p>
-						</div>
-						<div class="card border-light">
-							<div class="card-header bg-transparent text-center title"><i class="material-icons md-48">bubble_chart</i><h5>Vision</h5></div>
-							<h6 class="card-title mt-2 text-center text-muted">Queremos Llegar Lejos</h6>
-							<p>Ser la empresa líder en posibilitar una vida dinámica y sostenible.</p>
-						</div>
-						<div class="card border-light">
-							<div class="card-header bg-transparent text-center title"><i class="material-icons md-48">highlight</i><h5>Valores</h5></div>
-							<h6 class="card-title mt-2 text-center text-muted">Nuestra Motivacion</h6>
-							<p>Creemos que tu vida no tiene que estar atada a un lugar específico, y que los recursos del mundo son limitados. Buckminster Fuller, una de nuestras mayores inspiraciones, caracterizó nuestro planeta como una nave espacial que carga una determinada cantidad de recursos para la vida, y lo que buscamos es aprovecharlos al máximo para ofrecer espacios habitables de calidad, que se adapten a los dinámicos cambios de la vida contemporánea.</p>
-						</div>
-					</div>
-				</div>
-				<div class="row" >
-						<div class="col-md-12">
-							<h3 class="display-4 text-center my-4 section" id="item-5">Nuestro Equipo</h3>
-						</div>
-						<div class="col-4 my-4">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-md-auto d-md-flex">
+                    <li class="nav-item ml-1">
+                         <a class="nav-link d-flex justify-content-start" href="#item-2" data-toggle="tooltip" data-placement="bottom" title="Resumen"><i class="material-icons">map</i><p class="ml-3 evince">Resumen</p></a>
+                    </li>
+                    <li class="nav-item ml-1">
+                         <a class="nav-link d-flex justify-content-start" href="#item-3" data-toggle="tooltip" data-placement="bottom" title="Productos"><i class="material-icons">shopping_basket</i><p class="ml-3 evince">Productos</p></a>
+                    </li>
+                    <li class="nav-item ml-1">
+                         <a class="nav-link d-flex justify-content-start" href="#item-4" data-toggle="tooltip" data-placement="bottom" title="¿Quiénes somos?"><i class="material-icons">info</i><p class="ml-3 evince">¿Quiénes somos?</p></a>
+                    </li>
+                    <li class="nav-item ml-1">
+                         <a class="nav-link d-flex justify-content-start" href="#item-5" data-toggle="tooltip" data-placement="bottom" title="Equipo"><i class="material-icons">group</i><p class="ml-3 evince">Equipo</p></a>
+                    </li>
+                    <li class="nav-item ml-1">
+                         <a class="nav-link d-flex justify-content-start" href="#item-7" data-toggle="tooltip" data-placement="bottom" title="Prensa"><i class="material-icons">book</i><p class="ml-3 evince">Prensa</p></a>
+                    </li>
+                    <li class="nav-item ml-1">
+                         <a class="nav-link d-flex justify-content-start" href="#item-6" data-toggle="tooltip" data-placement="bottom" title="Contacto"><i class="material-icons">drafts</i><p class="ml-3 evince">Contacto</p></a>
+                    </li>
+                    <li class="nav-item dropdown ml-1">
+                        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="material-icons">person_add</i></a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            	<a class="dropdown-item btn-outline-dark text-center" href="http://fb.me/suboxar" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <div class="dropdown-divider"></div>
+                            	<a class="dropdown-item btn-outline-dark text-center" href="http://instagram.com/suboxar" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <div class="dropdown-divider"></div>
+                            	<a class="dropdown-item btn-outline-dark text-center" href="http://linkedin.com/company/suboxar" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <div class="dropdown-divider"></div>
+                            	<a class="dropdown-item btn-outline-dark text-center" href="mailto:info@subox.com.ar"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="" id="item-1">
+            <div class="page-header">
+                <div class="page-header-img" style="background-image: url('./dist/img/6M64UP.jpg');"></div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            	<h1 class="display-4 mt-5 mx-auto head">SUBOX Argentina</h1>
+                            	<h3 class="display-4 text-center sub mx-auto">Espacios que se adaptan a tu presente y te permiten vivir tu futuro. Donde sea.<br> 
+
+                            Próximamente arma el tuyo y visualizalo online!</h3>	
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="" id="item-2" data-spy="scroll" data-target="#navbar" data-offset="0">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container-fluid">
+                    	<h1 class="text-center display-4">El futuro es modular</h1>
+                    	<h4 class="mx-auto text-justify display-4 descrip text-muted mt-4">SUBOX es una startup Argentina que fabrica espacios habitables modulares en seco a través de innovadores métodos de diseño y aislación, de muy alta calidad, durabilidad y flexibilidad de usos y posibilidades de expansión, entregándotelos en sólo un par de meses.
+                    La construcción modular es un proceso en el cual un edificio para cualquier uso es construido fuera del sitio, bajo condiciones de planta controladas, usando materiales industrializados con mayores estándares de calidad que los usados convencional y tradicionalmente, en mucho menos tiempo.<br><br>Producimos módulos que luego se llevan al sitio ya terminados, reflejando niveles de diseño y especificaciones con la misma potencialidad que un edificio construido in situ, sin resignaciones y con controles de calidad mucho mayores. Pueden expandirse adicionando módulos, o quitar y revender los que ya no se usen. A su vez no están atados a un sitio específico, debido a que pueden ser transportados a otro lugar de así desearlo.</h4>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 mt-1">
+                        <div class="card imagen">
+                            <img class="card-img" src="./dist/img/Vivienda%20-%2036%20m2%202.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-1">
+                        <div class="card imagen">
+                            <img class="card-img" src="./dist/img/Vivienda%20-%2036%20m2.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <blockquote class="blockquote text-center mt-3">
+                            <p class="lead">"Diseñar es hacer lo máximo con lo mínimo."</p>
+                            <footer class="blockquote-footer">BUCKMINSTER FULLER</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-4 section2" id="item-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center mb-4 display-4">Nuestros productos</h1>
+                    </div>
+                    <div class="d-flex align-items-stretch">
+                       <div class="col-md-4 mt-3 col-sm-4">
+                        <div class="card">
+                            <div class="card-over">
+                                <img src="dist/img/Vivienda%20-%2036%20m2%20int%202.jpg" class="card-img-top img-card">
+                                <div class="overlay">SUBOX LifePack</div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center">Espacios modulares de vivienda <br> y hogar</p>
+                                    <a href="" class="btn text-right">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3 col-sm-4">
+                        <div class="card">
+                            <div class="card-over">
+                                <img src="dist/img/Oficina%20-%2054%20m2%202.jpg" class="card-img-top img-card">
+                                <div class="overlay">SUBOX WorkPack</div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center">Espacios modulares de trabajo, venta y corporativos</p>
+                                    <a href="" class="btn text-right">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3 col-sm-4">
+                        <div class="card">
+                            <div class="card-over">
+                                <img src="dist/img/Ocio%20-%20sala%20cine%2018m2%203.jpg" class="card-img-top img-card">
+                                <div class="overlay">SUBOX FunPack</div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center">Espacios modulares de ocio, relajación y diversión</p>
+                                    <a href="" class="btn text-right">Más Información</a>
+                            </div>
+                        </div>
+                    </div> 
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="section" id="item-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        	<h3 class="display-4 text-center mt-4">¿Quiénes somos?</h3>
+                        <p class="text-center text-muted">Nuestro equipo está compuesto de gente joven, decidida y capaz, dedicada a buscar la satisfacción en cada cliente.
+                            <br>Buscamos innovación responsable en todo aspecto posible, acorde a los valores que nos caracterizan.</p>
+                    </div>
+                    <div class="col-md-12 mt-4 card-deck">
+                        <div class="card border-light">
+                            <div class="card-header bg-transparent text-center title"><i class="material-icons md-48">bubble_chart</i>
+                                <h5>Visión</h5>
+                            </div>
+                            	<h6 class="card-title mt-2 text-center text-muted"></h6>
+                            <p class="text-justify offset-md-1">Ser la empresa líder en posibilitar una vida dinámica y sostenible.</p>
+                        </div>
+                        <div class="card border-light">
+                            <div class="card-header bg-transparent text-center title"><i class="material-icons md-48">highlight</i>
+                                <h5>Valores</h5>
+                            </div>
+                            	<h6 class="card-title mt-2 text-center text-muted"></h6>
+                            <p class="text-justify">Hoy en día la construcción no es eficiente. Se desperdicia una gran cantidad de tiempo, materiales y agua, un recurso fundamental para la vida en nuestro planeta. Buscamos romper con estos viejos paradigmas, por eso la eficiencia es un aspecto clave para nosotros. La sostenibilidad y responsabilidad son también claves de nuestra empresa.</p>
+                        </div>
+                        <div class="card border-light">
+                            <div class="card-header bg-transparent text-center title"><i class="material-icons md-48">trending_up</i>
+                                <h5>Misión</h5>
+                            </div>
+                            	<h6 class="card-title mt-2 text-center text-muted"></h6>
+                            <p class="text-justify">Brindar un espacio acorde a la vida dinámica de los tiempos actuales, que se adapte a la vida del usuario y le permita vivir su futuro, sea cual sea.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        	<h3 class="display-4 text-center my-4 section" id="item-5">Equipo</h3>
+                    </div>
+                    <div class="col-4 my-4">
                         <img src="dist/img/Pochorecorte.jpg" class="profile-img">
                         	<h6 class="text-center">Joaquín Estévez</h6>
                         <div class="btn-group d-flex justify-content-center">
-                            <a target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-facebook-f"></i>
+                             <a href="https://www.facebook.com/pochoestevez" target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-facebook-f"></i>
+
+                            </a>
+                            <a href="https://www.linkedin.com/in/joaquin-estevez-58760b16a/" target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-linkedin-in"></i>
+
                             </a>
                         </div>
-                        <p class="text-center text-muted">Cofundador
-                            <br>Arquitectura</p>
+                        <p class="text-center text-muted">Cofundador-Arquitectura</p>
                     </div>
                     <div class="col-4 my-4">
                         <img src="dist/img/Franrecorte.jpg" class="profile-img">
                         	<h6 class="text-center">Francisco Maranchello</h6>
                         <div class="btn-group d-flex justify-content-center">
-                            <a target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-facebook-f"></i>
+                             <a href="https://www.facebook.com/fran.maranchello" target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-facebook-f"></i>
+
                             </a>
-                            <a target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-linkedin-in"></i>
+                             <a href="https://linkedin.com/in/franmaranchello" target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-linkedin-in"></i>
+
                             </a>
                         </div>
-                        <p class="text-center text-muted">Cofundador
-                            <br>Arquitectura</p>
+                        <p class="text-center text-muted">Cofundador-Arquitectura</p>
                     </div>
                     <div class="col-4 my-4">
                         <img src="dist/img/franco.jpg" class="profile-img">
-                        	<h6 class="text-center">Franco Antonio Ottavianelli</h6>
+                        	<h6 class="text-center">Franco Ottavianelli</h6>
                         <div class="btn-group d-flex justify-content-center">
-                            <a target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-facebook-f"></i>
+                             <a href="https://www.facebook.com/fran.otta" target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-facebook-f"></i>
+
                             </a>
-                            <a target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-linkedin-in"></i>
+                             <a href="https://linkedin.com/in/faotta" target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-linkedin-in"></i>
+
                             </a>
                         </div>
-                        <p class="text-center text-muted">Marketing
-                            <br>Finanzas</p>
+                        <p class="text-center text-muted">Marketing-Finanzas</p>
                     </div>
                     <div class="col-4 my-4">
                         <img src="dist/img/julio.jpg" class="profile-img">
                         	<h6 class="text-center">Julio Confalonieri</h6>
                         <div class="btn-group d-flex justify-content-center">
-                            <a class="text-dark text-center" href="http://cauplas.com" target="_blank">Cauplas Argentina</a>
+                             <a class="text-dark text-center" href="http://cauplas.com" target="_blank">Cauplas Argentina</a>
                         </div>
                         <p class="text-center text-muted">Ingeniería Química</p>
                     </div>
@@ -242,7 +262,8 @@
                         <img src="dist/img/juan.jpg" class="profile-img">
                         	<h6 class="text-center">Juan Frattin</h6>
                         <div class="btn-group d-flex justify-content-center">
-                            <a target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-facebook-f"></i>
+                             <a href="https://www.facebook.com/juan.frattin" target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-facebook-f"></i>
+
                             </a>
                         </div>
                         <p class="text-center text-muted">Ingeniería en Sistemas</p>
@@ -251,151 +272,233 @@
                         <img src="dist/img/juan%20chacon.jpg" class="profile-img">
                         	<h6 class="text-center">Juan Chacón</h6>
                         <div class="btn-group d-flex justify-content-center">
-                            <a target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-linkedin-in"></i>
+                             <a href="https://www.linkedin.com/in/chaconj03" target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-linkedin-in"></i>
+
                             </a>
                         </div>
-                        <p class="text-center text-muted">Mentor
-                            <br>CEO <a class="text-dark" href="http://machinalis.com" target="_blank">@Machinalis</a>
+                        <p class="text-center text-muted">Coach
+<!--                            <br>CEO <a class="text-dark" href="http://machinalis.com" target="_blank">@Machinalis</a>-->
                         </p>
-                    </div>			
-				</div>
-				<div class="row">
-					<div class="my-5 col-md-12">
-							<h3 class="display-4 text-center my-4 section" id="item-7">Prensa</h3>
-							<div class="py-5 d-flex justify-content-center row">
-								<a href="" class="col-md-2 col-6 my-3" target="_blank"><img class="img-thumbnail" src="./dist/img/Prensa/comercioyj.jpg"></a>
-								<a href="" class="col-md-2 col-6 my-3" target="_blank"><img class="img-thumbnail" src="./dist/img/Prensa/lavoz.png"></a>
-								<a href="" class="col-md-2 col-6 my-3" target="_blank"><img class="img-thumbnail" src="./dist/img/Prensa/logo-arqa.jpg"></a>
-								<a href="" class="col-md-2 col-6 my-3" target="_blank"><img class="img-thumbnail" src="./dist/img/Prensa/logo-iecba.png"></a>
-								<a href="" class="col-md-2 col-6 my-3" target="_blank"><img class="img-thumbnail" src="./dist/img/Prensa/logo-ubp.png"></a>								
-						</div>
-					</div>
-				</div>
-			</div>			
-		</section>
-		<section class="mt-4 section2" id="item-6">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<h1 class="text-center display-4 mb-4">Contacto</h1>
-					</div>
-					<div class="col-md-12">
-						<form class="mx-5" novalidate>
-							<div class="form-group">
-							    <div class="col-md-4 offset-md-4 mb-3">
-							    	<input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" required>
-							    	<div class="valid-feedback">Looks good!</div>
-							    </div>
-							    <div class="col-md-4 offset-md-4 mb-3">
-							    	<input type="email" class="form-control" id="validationCustom02" placeholder="Email" required>
-							    	<div class="valid-feedback">Looks good!</div>
-							    </div>
-							    <div class="col-md-4 offset-md-4 mb-3">
-							    	<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Comentario..." rows="3"></textarea>
-							    </div>
-							    <div class="col-md-4 offset-md-4 d-flex justify-content-center">
-							    	<button type="submit" class="btn btn-outline-dark">Enviar</button>
-							    </div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
-		<footer class="footer">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12 bar-social">
-						<div class="btn-group d-flex justify-content-center">
-							<a href="http://fb.me/suboxar" target="_blank"><button class="btn-round"><i class="fab fa-facebook-f"></i></button></a>
-							<a href="http://instagram.com/suboxar" target="_blank"><button class="btn-round ml-3"><i class="fab fa-instagram"></i></button></a>
-							<a href="http://linkedin.com/company/suboxar" target="_blank"><button class="btn-round ml-3"><i class="fab fa-linkedin-in"></i></button></a>							
-						</div>
-					</div>
-					
-					<div class="col-md-4">
-						<div class="row mt-3">
-							<i class="material-icons md-light mt-3 text-center col-2 col-md-2">place</i>
-							<p class="col-md-6 col-6 foot-txt">Mocovíes 7165<br><b>Cordoba, Argentina</b></p>
-						</div>
-						<div class="row mt-3">
-							<i class="material-icons md-light text-center col-2 col-md-2">phone</i>
-							<p class="col-md-6 col-6 foot-txt"><b>(+549)3516879614</b></p>
-						</div>
-						<div class="row my-3">
-							<i class="material-icons md-light text-center col-2 col-md-2">email</i>
-							<a class="col-md-6 col-6 foot-a"><b>info@subox.com.ar</b></a>
-						</div>
-						
-					</div>
-					<div class="col-md-4">
-						<div class="row mt-3">
-							<p class="text-left text-light col-md-12"><b>Acerca de la compañia</b></p>
-							<p class="col-md-12 foot-p">Actualmente estamos en un proceso de incubación en DoingLabs, incubadora de empresas de Córdoba Capital, desarrollando nuestro producto y nuestra plataforma de personalización y visualización en tiempo real online.</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="row mt-3">
-							<p class="lead mt-2 text-light copyright col-md-8 offset-md-4">Copyright © 2018 SUBOX.<br> All Rights Reserved.<br><a class="text-light" href="www.subox.com.ar"> subox.com.ar</a></p>
-							<p class="text-right text-light mt-5 col-md-9 offset-md-3"><small><em>Page Design by Juan Frattin Studio in Córdoba</em></small></p>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</footer>
-		<script type="text/javascript" src="dist/js/jquery.min.js"></script>
-		<script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+                    </div>
+                    <div class="col-4 my-4">
+                        <img src="dist/img/Eduardo.jpeg" class="profile-img">
+                        	<h6 class="text-center">Eduardo Wuthrich</h6>
+                        <div class="btn-group d-flex justify-content-center">
+                             <a href="https://www.linkedin.com/in/eduardo-wuthrich-82603140" target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-linkedin-in"></i>
 
-		<script>
-		    $(function () {
-			  $(document).scroll(function () {
-			    var $nav = $(".fixed-top");
-			    var $drop = $(".dropdown-menu");
-			    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-			    $drop.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-			  });
-			});
-		</script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-			    $('[data-toggle="tooltip"]').tooltip();   
-			});
-		</script>
-		<script type="text/javascript">
-		       $(document).ready(function(){
-		       		if ($(window).width() < 769) {
-		       			$(".evince").css("display","flex");
-		       			$(".navbar-transparent").css("background-color","#fff")
-		       		}
-		       		else{
-		       			$(".evince").css("display","none");
-		       		}
-		       	});
-			
-		</script>
+                            </a>
+                        </div>
+                        <p class="text-center text-muted">Diseño estructural</p>
+                    </div>
+                    <div class="col-4 my-4">
+                        <img src="dist/img/Luciano.jpg" class="profile-img">
+                        	<h6 class="text-center">Luciano Nicora</h6>
+                        <div class="btn-group d-flex justify-content-center">
+                             <a href="https://www.linkedin.com/in/luciano-nicora-792248" target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-linkedin-in"></i>
 
-		<!-- Google Tag Manager (noscript) -->
-	    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMR923V"
-	    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	    <!-- End Google Tag Manager (noscript) -->
-	    <!-- Google Tag Manager -->
-	    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	    })(window,document,'script','dataLayer','GTM-WMR923V');</script>
-	    <!-- End Google Tag Manager -->
-	    <!-- Global site tag (gtag.js) - Google Analytics -->
-	    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46501108-1"></script>
-	    <script>
-	    window.dataLayer = window.dataLayer || [];
-	    function gtag(){dataLayer.push(arguments);}
-	    gtag('js', new Date());
+                            </a>
+                        </div>
+                        <p class="text-center text-muted">Mentor</p>
+                    </div>
+                    <div class="col-4 my-4">
+                        <img src="dist/img/Natalia.jpg" class="profile-img">
+                        	<h6 class="text-center">Natalia Bartolomei</h6>
+                        <div class="btn-group d-flex justify-content-center">
+                             <a href="https://www.linkedin.com/in/natalia-bartolomei-02a9a44" target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-linkedin-in"></i>
 
-	    gtag('config', 'UA-46501108-1');
-	    </script>
-		
-	</body>
-	
- </html>
+                            </a>
+                        </div>
+                        <p class="text-center text-muted">Coach</p>
+                    </div>
+                    <div class="col-4 offset-4 my-4">
+                        <img src="dist/img/Candela.jpg" class="profile-img">
+                        	<h6 class="text-center">Candela Estévez</h6>
+                        <div class="btn-group d-flex justify-content-center">
+                             <a href="https://www.facebook.com/cande.estevez.9" target="_blank" class="btn btn-outline-secondary btn-sm "><i class="fab fa-facebook-f"></i>
+
+                            </a>
+                        </div>
+                        <p class="text-center text-muted">Branding</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="my-5 col-md-12">
+                        	<h3 class="display-4 text-center my-4 section" id="item-7">Prensa y partners</h3>
+                        <div class="py-5 d-flex justify-content-center row">
+                            <a href="https://comercioyjusticia.info/blog/pymes/crean-espacios-habitables-moviles-para-distintos-usos/" class="col-md-2 col-6 my-3" target="_blank">
+                                <img class="img-thumbnail" src="./dist/img/Prensa/crop643_comercioyjusticia_1.jpgtn.png">
+                            </a>
+                            <a href="http://www.lavoz.com.ar/negocios/emprendedores-que-buscan-crecer-arquitectura-sustentable-proyecto-subox" class="col-md-2 col-6 my-3" target="_blank">
+                                <img class="img-thumbnail" src="./dist/img/Prensa/lavoz_logo_desktop.png">
+                            </a>
+                            <a href="http://arqa.com/actualidad/noticias/arquitectura-de-contenedores.html" class="col-md-2 col-6 my-3" target="_blank">
+                                <img class="img-thumbnail" src="./dist/img/Prensa/logo-arqa.png">
+                            </a>
+                            <a href="http://innovaryemprendercba.com.ar/arquitectura-sustentable-proyecto-subox/" class="col-md-2 col-6 my-3" target="_blank">
+                                <img class="img-thumbnail" src="./dist/img/Prensa/cordoba-innovar-emprender.jpg">
+                            </a>
+                            <a href="http://www.ubp.edu.ar/arquitectura-y-diseno/arquitectura-sustentable-subox/" class="col-md-2 col-6 my-3" target="_blank">
+                                <img class="img-thumbnail" src="./dist/img/Prensa/logo-ubp.png">
+                            </a>
+                            <a href="http://doinglabs.ubp.edu.ar/" class="col-md-2 col-6 my-3" target="_blank">
+                            <img class="img-thumbnail" src="./dist/img/Prensa/DoingLabs.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-4 section2" id="item-6">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        	<h1 class="text-center display-4 mb-4">Contacto</h1>
+                    </div>
+                    <div class="col-md-12">
+                        <form class="mx-5" novalidate>
+                            <div class="form-group">
+                                <div class="col-md-4 offset-md-4 mb-3">
+                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" required>
+                                    <div class="valid-feedback">Looks good!</div>
+                                </div>
+                                <div class="col-md-4 offset-md-4 mb-3">
+                                    <input type="email" class="form-control" id="validationCustom02" placeholder="Email" required>
+                                    <div class="valid-feedback">Looks good!</div>
+                                </div>
+                                <div class="col-md-4 offset-md-4 mb-3">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Comentario..." rows="3"></textarea>
+                                </div>
+                                <div class="col-md-4 offset-md-4 d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-outline-dark">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 bar-social">
+                        <div class="btn-group d-flex justify-content-center">
+                            <a href="http://fb.me/suboxar" target="_blank">
+                                <button class="btn-round"><i class="fab fa-facebook-f"></i>
+                                </button>
+                            </a>
+                            <a href="http://instagram.com/suboxar" target="_blank">
+                                <button class="btn-round ml-3"><i class="fab fa-instagram"></i>
+                                </button>
+                            </a>
+                            <a href="http://linkedin.com/company/suboxar" target="_blank">
+                                <button class="btn-round ml-3"><i class="fab fa-linkedin-in"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="row mt-3">
+                            	<i class="material-icons md-light mt-3 text-center col-2 col-md-2">place</i>
+                            <p class="col-md-6 col-6 foot-txt">Mocovíes 7165
+                                <br><b>Cordoba, Argentina</b>
+                            </p>
+                        </div>
+                        <div class="row mt-3">
+                            	<i class="material-icons md-light text-center col-2 col-md-2">phone</i>
+                            <p class="col-md-6 col-6 foot-txt"><b>(+549)3516879614</b>
+                            </p>
+                        </div>
+                        <div class="row my-3">
+                            	<i class="material-icons md-light text-center col-2 col-md-2">email</i>
+                            	<a class="col-md-6 col-6 foot-a" href="mailto:info@subox.com.ar"><b>info@subox.com.ar</b></a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row mt-3">
+                            <p class="text-left text-light col-md-12"><b>Acerca de la compañía</b>
+                            </p>
+                            <p class="col-md-12 foot-p text-justify">Actualmente estamos en un proceso de incubación en DoingLabs, incubadora de empresas de Córdoba Capital, desarrollando nuestro producto y nuestra plataforma de personalización y visualización en tiempo real online. Próximamente podrás acercarte a ver nuestro módulo de exhibición!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row mt-3">
+                            <p class="text-right lead text-light copyright col-md-8 offset-md-4">Copyright © 2018 SUBOX.<br>All Rights Reserved.<br><a class="text-light" href="http://subox.com.ar"> subox.com.ar</a>
+                            </p>
+                            <p class="text-right text-light mt-5 col-md-9 offset-md-3"><small><em>Diseño web por Frattin Studio en Córdoba</em></small>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="dist/js/jquery.min.js"></script>
+        <script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+
+        <script>
+            $(function() {
+                $(document).scroll(function() {
+                    var $nav = $(".fixed-top");
+                    var $drop = $(".dropdown-menu");
+                    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                    $drop.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                if ($(window).width() < 769) {
+                    $(".evince").css("display", "flex");
+                    $(".navbar-transparent").css("background-color", "#fff")
+                } else {
+                    $(".evince").css("display", "none");
+                }
+            });
+        </script>
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMR923V" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                        'gtm.start': new Date().getTime(),
+                        event: 'gtm.js'
+                    });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-WMR923V');
+        </script>
+        <!-- End Google Tag Manager -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46501108-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-46501108-1');
+        </script>
+
+    </body>
+
+</html>
