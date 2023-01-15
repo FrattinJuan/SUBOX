@@ -1,0 +1,122 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" type="image/png" href="./dist/img/suboxlogo.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SUBOX</title>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+		<script type="text/javascript" src="dist/js/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/css/root.css">
+		<!-- Fuente de iconos FontAwesome-->
+		<link rel="stylesheet" type="text/css" href="dist/css/css/all.css">
+		<link rel="" type="text/javascript" href="dist/js/root.js">
+		
+		
+	</head>
+	<body data-spy="scroll" data-target="#navbar">
+		<script>
+		    $(function () {
+			  $(document).scroll(function () {
+			    var $nav = $(".fixed-top");
+			    var $drop = $(".dropdown-menu");
+			    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+			    $drop.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+			  });
+			});
+		</script>
+		
+
+		<nav class="navbar fixed-top navbar-expand-lg navbar-transparent navbar-light" id="navbar">
+		  <a class="navbar-brand ml-3" href="#item-1"><img src="./dist/img/suboxlogo.png" width="25" height="30" class="d-inline-block align-top"> SUBOX</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+		    <ul class="navbar-nav ml-md-auto d-md-flex">
+		      <li class="nav-item">
+		        <a class="nav-link" href="#item-2">Mision</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#item-3">Productos</a>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Mas
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item btn-outline-dark" href="#item-4">Quienes Somos</a>
+		          <a class="dropdown-item btn-outline-dark" href="#item-5">Equipo</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item btn-outline-dark" href="#item-6">Contacto</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Registrarse</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+
+
+
+		
+		<footer class="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12 bar-social">
+						<div class="btn-group offset-md-4">
+							<button class="btn-round"><i class="fab fa-facebook-f"></i></button>
+							<button class="btn-round ml-3"><i class="fab fa-twitter"></i></button>
+							<button class="btn-round ml-3"><i class="fab fa-google-plus-g"></i></button>
+							<button class="btn-round ml-3"><i class="fab fa-linkedin-in"></i></button>
+							<button class="btn-round ml-3"><i class="fab fa-instagram"></i><a href=""></a></button>
+						</div>
+					</div>
+					
+					<div class="col-md-4">
+						<div class="row mt-3">
+							<i class="material-icons md-light mt-3 text-center col-2 col-md-2">place</i>
+							<p class="col-md-6 col-6 foot-txt">Calle tu mama<br><b>Cordoba, Argentina</b></p>
+						</div>
+						<div class="row mt-3">
+							<i class="material-icons md-light text-center col-2 col-md-2">phone</i>
+							<p class="col-md-6 col-6 foot-txt"><b>+54 351 22222222</b></p>
+						</div>
+						<div class="row my-3">
+							<i class="material-icons md-light text-center col-2 col-md-2">email</i>
+							<a class="col-md-6 col-6 foot-a"><b>subox@subox.com.ar</b></a>
+						</div>
+						
+					</div>
+					<div class="col-md-4">
+						<div class="row mt-3">
+							<p class="text-left text-light col-md-12"><b>Acerca de la compañia</b></p>
+							<p class="col-md-12 foot-p">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the releas</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row mt-3">
+							<p class="lead mt-2 text-light copyright col-md-8 offset-md-4">Copyright © 2018 SUBOX.<br> All Rights Reserved.<br><a class="text-light" href="www.subox.com.ar"> subox.com.ar</a></p>
+							<p class="text-right text-light mt-5 col-md-8 offset-md-4" style="font-family: San Francisco;"><small><em>Page Design by Juan Frattin Studio in NY</em></small></p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</footer>
+
+		<!-- <div>
+			<blockquote class="blockquote">
+			  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+			  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+			</blockquote>
+		</div> -->
+		<script type="text/javascript" src="dist/js/jquery.min.js"></script>
+		<script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+		
+	</body>
+	
+ </html>

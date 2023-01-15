@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+@font-face{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat-Regular'), url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat-Bold') url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+@font-face{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 200;
+    src: local('Montserrat-ExtraLight') url('../fonts/Montserrat/Montserrat-ExtraLight.ttf') format('truetype');
+}
+@font-face{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    src: local('Montserrat-Black') url('../fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.material-icons.md-subox { color: #93d236; }
+.material-icons.md-subox.md-inactive { color: #bddf90; }
+
+body {
+	position: relative;
+}
+.navbar-left{
+	float: left;
+}
+.navbar-transparent{
+	background-color: transparent ;
+    box-shadow: none;
+    color: #FFFFFF;
+}
+.fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 500ms ease;
+}
+.dropdown-menu.scrolled{
+    background-color: #fff;
+    border: 0;
+}
+.evince{
+	margin-bottom: 0px;
+	margin-top: 0px;
+	display: none;
+}
+.dropdown-menu{
+	border: 1px solid rgba(0,0,0,.15);
+	background-color: transparent;
+}
+.dropdown-toggle::after{
+	vertical-align: .555rem;
+}
+.sub{
+	font-size: 25px;
+}
+.head{
+	text-align: center;
+}
+h1.head{
+	padding-top: 100px;
+}
+.navbar-translate a{
+	color: #8dd02a;
+}
+.page-header{
+	background: linear-gradient(123deg,#999999c9 0%,#8d8d8d54 89%);
+	height: 125vh;
+	max-height: 1050px;
+	padding: 0;
+	color: white;
+	position: relative;
+}
+.page-header-img{
+	background-position: center top;
+	background-size: cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+/*No esta en uso en este momento*/
+.light-diagonal{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background-color: #FAFAFA;
+    top: -135px;
+    transform: skewY(-5deg);
+    z-index: 2;
+}
+.title{	
+    font-family: Montserrat;
+}
+h1.title{
+	color: #686363;
+}
+.descrip{
+	font-size: 30px;
+}
+.card, img{
+	/*background-position: center center;
+	background-size: cover;*/
+	border: none;
+}
+/*Resize de clases para dispositivos moviles*/
+@media (max-width: 992px){
+	header, .page-header, .page-header-img{
+		height: 600px;
+	}
+	.display-4{
+		font-size: 2.5rem;
+	}
+	.sub{
+		font-size: 1.5rem;
+	}
+	.descrip{
+		font-size: 1rem;
+	}
+}
+/*Asegurarse que la imagenes sean del mismo tamaño*/
+.img-card{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.card-over{
+	position: relative;
+	width: 100%;
+}
+.overlay{
+	position: absolute; 
+	bottom: 0; 
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	color: #f1f1f1; 
+	width: 100%;
+	transition: .5s ease;
+	opacity:0;
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+.card-over:hover .overlay {
+	opacity: 1;
+}
+.section{
+	padding-top: 5%;
+}
+.section2{
+	background: linear-gradient(122222deg,#d0e0e500 0%,#e9ecef 100%); 
+	padding-bottom: 25px;
+	padding-top: 5%;
+}
+.card-deck .card{
+	border: none;
+}
+ .profile-img {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+}
+
+@media (max-width: 992px){
+	.btn-center{
+		margin-left: 34%;
+	}
+	.botones{
+		margin-left: 10%;
+	}
+	.boton{
+		margin-left: 33%;
+	}
+}
+.bar-social{
+	background-color: #cecece;
+	padding: 30px 0 30px 0;
+}
+.btn-round{
+	background-color: #cecece;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border-style: none;
+}
+.btn-round:hover{
+	background-color: white;
+	cursor: pointer;
+}
+@media (max-width: 992px){
+	.btn-round{
+		width: 60px;
+		height: 60px;
+	}
+}
+.footer{
+	background-color: black;
+}
+.foot-txt, .foot-a{
+	color: white !important;
+	border-left-color: white;
+    border-left-style: solid;
+    border-left-width: 0.1px;
+    font-family: Montserrat;
+}
+.foot-a:hover{
+	cursor: pointer;
+	color: #cecece!important;
+}
+.foot-p{
+	font-size: 13px;
+	color: white;
+}
+.copyright{
+	font-size: 15px;
+	text-align: right;
+}
+.img-thumbnail{
+	border:none;
+}
+@media (max-width: 992px){
+	.copyright{
+		text-align: left;
+	}
+}
+/*Estilos para sample.html*/
+.nav-tabs{
+	border-bottom: none;
+}
+.acordeon{
+	background-color: transparent;
+	cursor: pointer;
+}
+.acordeon:hover{
+	color: #717987;
+}
+.txt-acord{
+	font-size: 1.5rem;
+}
+.acord-img{
+	max-height: 500px;
+}
+.test{
+	background-color: #cccccc;
+}

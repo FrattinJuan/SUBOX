@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sheets</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/core.css" rel="stylesheet">
+<!--link fuente-->
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+<script> 
+    function show() { 
+        if(document.getElementById('benefits').style.display=='none') { 
+            document.getElementById('benefits').style.display='block'; 
+        } 
+        return false;
+    } 
+    function hide() { 
+        if(document.getElementById('benefits').style.display=='block') { 
+            document.getElementById('benefits').style.display='none'; 
+        } 
+        return false;
+    } 
+	//Esta es //
+	 function disableBtn(){
+		 var x = document.forms["myForm"]["age"].value;
+		 if (isNaN(x)){
+			document.getElementById("myBtn").disabled = true;
+			return false;
+		 }
+		 else{
+			 document.getElementById("myBtn").disabled = false;
+			 return true;
+		 }
+	 }
+</script> 
+</head>
+<body>
+
+ <div class="alert-info" id="opener"><a href="#1" name="1" onclick="return show();">click here</a></div> 
+    <div id="benefits" style="display:none;">some input in here plus the close button 
+           <div id="upbutton"><a onclick="return hide();">click here</a>
+           </div>
+    </div> 
+ </div> 
+    
+    <!-- Y esto tambien-->
+ <form name="myForm" action="" method="post">
+    DNI: <input type="text" name="age" onKeyUp="return disableBtn()">
+<input type="submit" id="myBtn" value="Submit">   
+</body>
+</html>
